@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>home</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+    $(window).load(function() {
+        $(function() {
+            $('#foo1').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '#prev1',
+				next: '#next1',
+				items: {
+					height: 'auto',
+					width:380,
+					visible: {
+						min: 1,
+						max: 4
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+		});  	 				
+      });
+</script>
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow/wow.js"></script>
+<script src="js/wow/device.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+</head>
+<body>
+<!--header-->
+<header class="clearfix">
+    <div class="box">
+        <div class="container">
+            <p><a href="#">Sitemap</a> | <a href="#">FAQ</a></p>
+            <ul class="follow_icon">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+                <li><a href="#" class="fa fa-rss"></a></li>
+                <li><a href="#" class="fa fa-pinterest"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="navbar-brand navbar-brand_ wow fadeInDown" data-wow-delay="0.6s"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+        <p class="tel wow fadeInLeft" data-wow-delay="0.7s">phone: <strong>+ 8 800 757 43 92</strong></p>
+    </div>
+</header>
+<div class="slider">  
+    <div class="camera_wrap">
+        <div data-src="img/picture1.jpg"><div class="camera-caption fadeIn"><p class="title">Specializing</p><p class="description">in marine construction</p></div></div>
+        <div data-src="img/picture2.jpg"><div class="camera-caption fadeIn"><p class="title">The leading</p><p class="description">marine contractor</p></div></div>
+        <div data-src="img/picture3.jpg"><div class="camera-caption fadeIn"><p class="title">A range of</p><p class="description">marine construction services</p></div></div>
+    </div>
+</div>
+<div class="menu_box">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+            <ul class="nav sf-menu clearfix">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="sub-menu"><a href="index-1.html">about</a><span></span>
+                    <ul class="submenu">
+        				<li><a href="#">history</a></li>
+        				<li><a href="#">news</a><span class="fa fa-angle-right"></span>
+                            <ul class="submenu">
+                                <li><a href="#">latest</a></li>
+                                <li><a href="#">archive</a></li>
+                              </ul> 
+                        </li>
+        				<li><a href="#">testimonials</a></li>
+        			</ul>
+                </li>
+                <li><a href="index-2.html">services</a></li>
+                <li><a href="index-3.html">projects</a></li>
+                <li><a href="index-4.html">contacts</a></li>
+            </ul>
+             <form id="search" class="search" action="search.php" method="GET" accept-charset="utf-8">
+                <input type="text" name="s" value="" onfocus="if (this.value == '') {this.value=''}" onblur="if (this.value == '') {this.value=''}">
+                <a href="#" onClick="document.getElementById('search').submit()"><img src="img/magnify.png" alt=""></a>
+            </form>
+        </nav>
+    </div>
+    <em></em>
+</div>
+<!--content-->
+<div class="content"> 
+    <div class="thumb-box1">
+        <div class="container">
+            <p class="title wow fadeIn">welcome to Aux-Tech Drilling Limited</p>
+            <p class="description wow fadeIn">A comprehensive range of marine construction services</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="img/page1_pic1.jpg" alt=""></figure>
+                            <div class="box">
+                                <p>new<br>technologies</p>
+                            </div>
+                            <div class="caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliquat enimad minim veniam quis.</p>
+                                <a href="#" class="btn-default btn1">more</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="img/page1_pic2.jpg" alt=""></figure>
+                            <div class="box">
+                                <p>professional<br>services</p>
+                            </div>
+                            <div class="caption">
+                                <p>Massa dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliquat enimad minim veniam quis dolore.</p>
+                                <a href="#" class="btn-default btn1">more</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="img/page1_pic3.jpg" alt=""></figure>
+                            <div class="box">
+                                <p>inspection<br>and testing</p>
+                            </div>
+                            <div class="caption">
+                                <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliquat enimad minim veniam nostrud exercitation ullamco.</p>
+                                <a href="#" class="btn-default btn1">more</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <p class="title wow fadeInLeft">how we can help</p>
+                    <p class="description wow fadeInLeft" data-wow-delay="0.1s">exercitationem ullam corporis</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp">
+                            <ul class="list1">
+                                <li><a href="#">Sed ut perspiciatis undemnis</a></li>
+                                <li><a href="#">Este natus error sit</a></li>
+                                <li><a href="#">Soluptatem accusantium</a></li>
+                                <li><a href="#">Doloremque laudantium</a></li>
+                                <li><a href="#">otam rem aperiam eaque</a></li>
+                                <li><a href="#">Apsa quae ab illo inventore</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <ul class="list1">
+                                <li><a href="#">Dotam rem aperiam eaque ipsa</a></li>
+                                <li><a href="#">Eae ab illo inventore veritatis et</a></li>
+                                <li><a href="#">Suasi architecto beatae vitae</a></li>
+                                <li><a href="#">Explicaboemo enim ipsam</a></li>
+                                <li><a href="#">Eluptatem quia voluptas sit</a></li>
+                                <li><a href="#">Aspernatur aut odit aut</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <p class="title wow fadeInRight">why choose us</p>
+                    <p class="description wow fadeInRight" data-wow-delay="0.1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp">
+                            <ul class="list1">
+                                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                <li><a href="#">Consectetur adipisicing elit sed</a></li>
+                                <li><a href="#">Eiusmod tempor incididunt ut</a></li>
+                                <li><a href="#">Et dolore magna aliqua</a></li>
+                                <li><a href="#">Ut enim ad minim veniam</a></li>
+                                <li><a href="#">Aquis nostrud exercitation ullamco</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <ul class="list1">
+                                <li><a href="#">Ut enim ad minim veniam</a></li>
+                                <li><a href="#">Duis nostrud exercitationulla</a></li>
+                                <li><a href="#">Aco laboris nisi ut aliquip</a></li>
+                                <li><a href="#">Ex ea commodo consequat</a></li>
+                                <li><a href="#">Duis aute irure dolor in</a></li>
+                                <li><a href="#">Zeprehenderit in voluptate velit esse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box3">
+        <div class="container">
+            <h2 class="indent wow fadeInRight">Recent projects</h2>
+            <div class="list_carousel1 responsive clearfix wow fadeInUp" data-wow-delay="0.1s">
+                <div class="list_btn1">
+                    <a id="prev1" class="prev2" href="#"></a>
+                    <a id="next1" class="next2" href="#"></a>
+                </div>
+                <ul id="foo1">
+                    <li>
+                        <figure><img src="img/page1_pic4.jpg" alt=""></figure>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor</p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/page1_pic5.jpg" alt=""></figure>
+                        <div class="caption">
+                            <p>excepturi sint occaecati</p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/page1_pic6.jpg" alt=""></figure>
+                        <div class="caption">
+                            <p>in culpa qui officia</p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/page1_pic7.jpg" alt=""></figure>
+                        <div class="caption">
+                            <p>Et harum quidem</p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/page1_pic5.jpg" alt=""></figure>
+                        <div class="caption">
+                            <p>excepturi sint occaecati</p>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <p class="wow fadeInLeft">View our events calendar</p>
+                </div>
+                <div class="col-lg-3 center">
+                    <p class="time wow fadeInRight" data-wow-delay="0.1s"><strong>2014</strong> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+        <em></em>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 maxheight2 wow fadeInUp">
+                <p class="logo">Mariner</p>
+                <p class="prev">&copy; <em id="copyright-year"></em> <i>|</i> <a href="index-5.html">Privacy Policy</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.2s">
+                 <h3>latest posts</h3>
+                 <hr>
+                 <ul class="list2">
+                    <li>
+                        <p>Eos et accusamus et iustom odgnissimos ducimus qui blap.</p>
+                        <a href="#"><time datetime="2014-01-01">5 Days ago.</time></a>
+                    </li>
+                    <li>
+                        <p>At accusamus et iustom odgnissimos ducimus qui blapraesentium.</p>
+                        <a href="#"><time datetime="2014-01-01">7 Days ago.</time></a>
+                    </li>
+                 </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.3s">
+                 <h3>Online Support</h3>
+                 <hr>
+                 <strong>+ 8 800 757 43 92</strong>
+                 <p>Ask Your questions by e-mail:<br><a href="#" class="lnk">mail@demolink.org</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.4s">
+                 <h3>Get In Touch</h3>
+                 <hr>
+                 <ul class="follow_icon2">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                    <li><a href="#" class="fa fa-rss"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <!-- {%FOOTER_LINK} -->
+</footer>
+<section class="content_map">
+      <div class="google-map-api"> 
+        <div id="map-canvas" class="gmap"></div> 
+      </div> 
+</section>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script type="text/javascript"> 
+        /* Markers - coordinates*/
+          google_api_map_init(); 
+          function google_api_map_init(){ 
+            var map; 
+            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14)); 
+            var markCoord1 = new google.maps.LatLng(parseFloat(40.643180), parseFloat(-73.9874068,14)); 
+             var markCoord2 = new google.maps.LatLng(parseFloat(40.6422180), parseFloat(-73.9784068,14)); 
+             var markCoord3 = new google.maps.LatLng(parseFloat(40.6482180), parseFloat(-73.9724068,14)); 
+             var markCoord4 = new google.maps.LatLng(parseFloat(40.6442180), parseFloat(-73.9664068,14)); 
+             var markCoord5 = new google.maps.LatLng(parseFloat(40.6379180), parseFloat(-73.9552068,14)); 
+            var marker; 
+ 
+            var styleArray = [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#b5d29c"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#edeae2"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fdc043"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#e1a41b"
+            },
+            {
+                "lightness": 0
+            },
+            {
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#fffd8b"
+            },
+            {
+                "weight":2
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#d6c692"
+            },
+            {
+                "lightness": 0
+            },
+            {
+                "weight":1
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight":0.5
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#d1d0cd"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#fefc8b"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#3b3a21"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#99b3cc"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ff0000"
+            },
+            {
+                "lightness": 0
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ccc4b4"
+            },
+            {
+                "lightness": 0
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    }
+]
+             
+            var markerIcon = { 
+                url: "img/gmap_marker.png", 
+                size: new google.maps.Size(53, 71), 
+                origin: new google.maps.Point(0,0), 
+                anchor: new google.maps.Point(21, 70) 
+            }; 
+            function initialize() { 
+              var mapOptions = { 
+                zoom: 14, 
+                center: coordData, 
+                scrollwheel: false, 
+                styles: styleArray 
+              } 
+ 
+              var contentString = "<div></div>"; 
+              var infowindow = new google.maps.InfoWindow({ 
+                content: contentString, 
+                maxWidth: 200 
+              }); 
+               
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
+              marker = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord1, 
+                icon: markerIcon
+              }); 
+
+                /* Second marker - Position*/
+              marker1 = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord2, 
+                icon: markerIcon
+              }); 
+
+              
+               var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>4578 Marmora Road, Glasgow D04 89GR <span>800 2345-6789</span></p>'+
+                '</div>'+
+                '</div>';
+
+                /* Second marker - content*/
+                var contentString1 = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>Marker-2</p>'+
+                '</div>'+
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            /* Second marker*/
+            var infowindow1 = new google.maps.InfoWindow({
+                content: contentString1
+            });
+
+
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map,marker);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+            /* Second marker - show*/
+            google.maps.event.addListener(marker1, 'click', function() {
+              infowindow1.open(map,marker1);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+
+              map.setCenter(coordData);
+
+              var center = map.getCenter();
+            });
+          }
+
+            google.maps.event.addDomListener(window, "load", initialize); 
+
+          }    
+</script>
+</body>
+</html>
